@@ -33,7 +33,7 @@
 </style>
 <link rel="stylesheet" href="assets/refinement.css">
 <link rel="stylesheet" href="assets/experience.css">
-<link rel="stylesheet" href="assets/simulator.css">
+<link rel="stylesheet" href="assets/simulator.css?v=calendar-2">
 <link rel="stylesheet" href="assets/cases.css">
 </head>
 <body>
@@ -70,7 +70,7 @@ function syncWhats(){const hello=lang==='es'?'Hola, me interesa una cotización 
 document.querySelectorAll('[data-lang]').forEach(el=>el.addEventListener('click',()=>applyLang(el.dataset.lang)));document.getElementById('sendWhatsApp').addEventListener('click',()=>sendQuote('wa'));document.getElementById('sendMail').addEventListener('click',()=>sendQuote('mail'));document.getElementById('burger').addEventListener('click',()=>{const menu=document.getElementById('mobileMenu');const expanded=menu.classList.toggle('open');document.getElementById('burger').setAttribute('aria-expanded',String(expanded))});document.querySelectorAll('#mobileMenu a').forEach(a=>a.addEventListener('click',()=>{document.getElementById('mobileMenu').classList.remove('open');document.getElementById('burger').setAttribute('aria-expanded','false')}));document.getElementById('year').textContent=new Date().getFullYear();let saved='es';try{saved=localStorage.getItem('fluia_lang')||'es'}catch(e){}applyLang(saved==='en'?'en':'es');
 </script>
 <script src="assets/experience.js"></script>
-<script src="assets/simulator.js"></script>
+<script src="assets/simulator.js?v=calendar-2"></script>
 <script src="assets/cases.js"></script>
 </body>
 </html>
